@@ -18,6 +18,10 @@
             <img src="image/ieee-logo-white.png" alt="logo" class="ieee-logo-right">
         </div>
 
+        <!-- رسائل النجاح والخطأ -->
+        <div id="successMessage" style="display:none; color: green; margin-top: 10px; padding: 10px; border-radius: 5px; background: #f0fff0;"></div>
+        <div id="errorMessage" style="display:none; color: red; margin-top: 10px; padding: 10px; border-radius: 5px; background: #fff0f0;"></div>
+
         <form class="application-form" id="applicationForm">
             <div class="form-group">
                 <label for="name">Full Name <span class="required">*</span></label>
@@ -51,23 +55,19 @@
                 </div>
             </div>
 
-            <button type="submit" class="submit-btn">
+            <!-- أضيفي id للزر -->
+            <button type="submit" class="submit-btn" id="submitBtn">
                 <i class="fas fa-paper-plane"></i> Submit
             </button>
 
+            <!-- عنصر التحميل -->
+            <div id="loading" style="display:none; text-align:center; margin-top: 10px; padding: 10px;">
+                <i class="fas fa-spinner fa-spin"></i> Submitting...
+            </div>
+
             <p class="form-note">All fields marked with<span class="required">*</span> Mandatory</p>
         </form>
-        <!-- رسائل النجاح والخطأ -->
-        <div id="successMessage" style="display:none; color: green; margin-top: 10px;"></div>
-        <div id="errorMessage" style="display:none; color: red; margin-top: 10px;"></div>
-
-        <!-- عنصر التحميل -->
-        <div id="loading" style="display:none; text-align:center; margin-top: 10px;">
-            <i class="fas fa-spinner fa-spin"></i> Submitting...
-        </div>
-
     </div>
     <script src="main.js"></script>
 </body>
-
 </html>
