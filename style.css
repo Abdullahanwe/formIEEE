@@ -68,6 +68,25 @@
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         }
 
+        .successMessage{
+            display:none; 
+            color: green;
+            margin-bottom: 10px;
+            padding: 10px; 
+            border-radius: 5px; 
+            background: #f0fff0;
+            text-align: center;
+        }
+
+        .errorMessage{
+            display:none; 
+            color: red; 
+            margin-bottom: 10px; 
+            padding: 10px; 
+            border-radius: 5px; 
+            background: #fff0f0;
+            text-align: center;
+        }
         .form-group {
             margin-bottom: 25px;
         }
