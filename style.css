@@ -20,6 +20,7 @@
             line-height: 1.6;
             min-height: 100vh;
             padding: 20px;
+            text-align: end;
         }
 
         .container {
@@ -85,6 +86,8 @@
             border-radius: 8px;
             font-size: 1rem;
             transition: all 0.3s;
+            text-align: left;
+            direction: ltr;
         }
 
         .form-control:focus {
