@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج تقديم طلب - IEEE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image/wiht.png" alt="logo" class="ieee-logo-left">
+            <h1>IEEE Application Form</h1>
+            <p>Please fill out the form below with the required information.</p>
+            <img src="image/ieee-logo-white.png" alt="logo" class="ieee-logo-right">
+        </div>
+
+        <form class="application-form" id="applicationForm">
+            <div class="form-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email<span class="required">*</span></label>
+                <input type="email" id="email" class="form-control" placeholder="example@domain.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">phone number<span class="required">*</span></label>
+                <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="college">College <span class="required">*</span></label>
+                <input type="text" id="college" class="form-control" placeholder="Enter the college name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cv">Curriculum Vitae (CV)<span class="required">*</span></label>
+                <div class="file-upload">
+                    <label for="cvFile" class="file-upload-label">
+                        <span>Choose a CV file</span>
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </label>
+                    <input type="file" id="cvFile" class="file-input" accept=".pdf,.doc,.docx" required>
+                    <div class="file-name" id="fileName">No file selected</div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Submit
+            </button>
+
+            <p class="form-note">All fields marked with<span class="required">*</span> Mandatory</p>
+        </form>
+        <!-- رسائل النجاح والخطأ -->
+        <div id="successMessage" style="display:none; color: green; margin-top: 10px;"></div>
+        <div id="errorMessage" style="display:none; color: red; margin-top: 10px;"></div>
+
+        <!-- عنصر التحميل -->
+        <div id="loading" style="display:none; text-align:center; margin-top: 10px;">
+            <i class="fas fa-spinner fa-spin"></i> Submitting...
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
